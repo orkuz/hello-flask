@@ -10,7 +10,7 @@ def inject_today_date():
     date_time_str = now.strftime("%Y-%m-%d %H:%M:%S")
     return {'today_date': date_time_str}
 
-@app.route('/')
+@app.route('/index')
 def home():
     return render_template('index.html')
 
